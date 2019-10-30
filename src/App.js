@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import 'bootstrap/dist/css/bootstrap.min.css' // Import do arquivo do Boostrap
+import NavBar from './Components/Navbar'
+import Routes from './Components/Routes'
+// A NavBar não fica Wrapped no Switch por que ela não muda com os componentens é fixa.
+class App extends React.Component {
+  render() {
+    return(
+    <React.Fragment>
+        <NavBar/>
+        <Routes/>
+    </React.Fragment>
+    )
+  }
 }
+
 
 export default App;
