@@ -4,8 +4,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import './index.css';
 import App from './App';
 import {ProductProvider} from './context'
-import * as serviceWorker from './serviceWorker';
-// Wrap do App inteiro dentro do Router para que a aplicação tenha acesso
+// Wrap do App inteiro dentro do Router para que a aplicação tenha acesso aos componentes renderizados dentro do arquivo
 ReactDOM.render(
 <ProductProvider>
 <Router>
@@ -13,4 +12,4 @@ ReactDOM.render(
 </Router> 
 </ProductProvider>
     ,document.getElementById('root'));
-serviceWorker.unregister();
+

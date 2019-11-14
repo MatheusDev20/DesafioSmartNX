@@ -21,22 +21,22 @@ class Details extends Component {
                     <img src={img} alt="img" className="img-fluid"/>
                     </div>
                     <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                    <h2>Model: {title} </h2>
+                    <h2> Produto : {title} </h2>
                     <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
-                        Made by: <span className="text-uppercase">
+                        Produzido por: <span className="text-uppercase">
                             {company}
                         </span>
                     </h4>
                     <h4 className="text-blue">
-                       Price: <span>$</span> {price}
+                       Preço: <span>$</span> {price}
                     </h4>
-                    <p className="text-capitalize font-weight-bold mt-3 mb-0"> Some info about </p>
+                    <p className="text-capitalize font-weight-bold mt-3 mb-0"> Informações Sobre </p>
                     <p className="text-muted lead ">{info} </p>
                         <div>
                             <Link to="/">
                             <ButtonContainer
                             >
-                                Back to Products
+                              Voltar para os produtos
                             </ButtonContainer>
                              </Link>
                              <ButtonContainer
@@ -46,7 +46,7 @@ class Details extends Component {
                                   value.addToCart(id)
                                   value.openModal(id)
                               }}>
-                                 {inCart? "inCart": "Add to cart"}
+                                 {inCart? "inCart": "Adicionar ao Carrinho"}
                              </ButtonContainer>
                         </div>
                     </div>

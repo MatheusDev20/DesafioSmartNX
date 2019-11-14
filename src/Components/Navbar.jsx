@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
-import logo from '../../src/logo5.png'
+import logo from '../../src/logo.png'
 import {ButtonContainer} from './Button'
 import {NavWrap} from './NavWraper'
  class Navbar extends Component {
@@ -14,7 +14,7 @@ import {NavWrap} from './NavWraper'
                     <ul className="navbar-nav align-items-center">
                         <li className="nav-item ml-5">
                         <Link to="/" className="nav-link">
-                            Products
+                            <span style={{color:'yellow'}}>RR MATERIAIS</span>
                             </Link>
                         </li>
                     </ul>
@@ -23,7 +23,7 @@ import {NavWrap} from './NavWraper'
                             <span className="mr-2">
                             <i className="fas fa-cart-plus"/> 
                             </span>
-                                My Cart
+                                Meu Carrinho
                             </ButtonContainer>
                     </Link>
              </NavWrap>

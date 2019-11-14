@@ -68,7 +68,7 @@ class ProductProvider extends Component {
             return {modalOpen:false}
         })
     }
-    // Metodos para controlar as funcionalidades do Cart
+    // Metodos para controlar as funcionalidades do Carrinho
     increment = id => {
        let tempCart = [...this.state.cart]
        const selectedProduct = tempCart.find(item=>item.id ===id)
@@ -114,6 +114,7 @@ class ProductProvider extends Component {
             this.addTotals();
         })
     }
+    // Clenar o carrinho
     clearCart = id => {
        this.setState(()=>{
            return {cart:[]} 
@@ -123,6 +124,7 @@ class ProductProvider extends Component {
                this.addTotals();
            })
        }
+       // Somar o total dos produtos
     addTotals = () => {
         let subTotal = 0
         this.state.cart.map(item=>(subTotal += item.total))
